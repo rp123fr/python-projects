@@ -1,0 +1,14 @@
+import tkinter as tk
+
+# 1. Create the main desktop window application
+window = tk.Tk()
+window.title("My First Python GUI")
+window.geometry("300x200") # Sets the window size (width x height)
+
+# 2. Create a text label widget inside the window
+label = tk.Text(window)
+label = tk.Label(window, text="Hello! You built a GUI!", font=("Arial", 14))
+label.pack(pady=50) # Centers the label and adds padding around it
+
+# 3. Start the application loop to keep the window open on screen
+window.mainloop()
